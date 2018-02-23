@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="paris.rox.roxx.PhoneActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="92dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/index1"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Login To Rox App"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp"
+        android:layout_marginBottom="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/phone_auth_fields"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/field_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter Phone Number"
+                android:inputType="phone"
+                android:textColor="@android:color/holo_orange_light" />
+
+            <EditText
+                android:id="@+id/field_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter Verification Code "
+                android:inputType="number"
+                android:textColor="@android:color/holo_orange_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:weightSum="3.0">
+
+            <Button
+                android:id="@+id/button_start_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@android:color/holo_orange_light"
+
+                android:text="start"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/button_verify_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@android:color/holo_orange_light"
+                android:text="verify"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/button_resend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@android:color/holo_orange_light"
+                android:text="resend" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
